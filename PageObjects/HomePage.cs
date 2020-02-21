@@ -39,14 +39,8 @@ namespace TestChrome.PageObjects
         [FindsBy(How = How.CssSelector, Using = "[data-date='2020-05-30']")]
         public IWebElement DateEnd { get; set; }
 
-                // Кнопка поиск
+        // Кнопка поиск
         [FindsBy(How = How.CssSelector, Using = "button[type='submit']")]
         public IWebElement ButtonSearchForm { get; set; }
-
-        
-        
-
-
-        
     }
 }
