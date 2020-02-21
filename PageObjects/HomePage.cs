@@ -22,7 +22,7 @@ namespace TestChrome.PageObjects
         [FindsBy(How = How.CssSelector, Using = "input[type='search']")]
         public IWebElement TextSearchForm { get; set; }
 
-        //Поле даты въезда и выезда #frm > div.xp__fieldset.accommodation
+        // Поле даты въезда и выезда #frm > div.xp__fieldset.accommodation
         [FindsBy(How = How.CssSelector, Using = "[data-component='search/dates/date-field-select']")]
         public IWebElement DateSearchForm { get; set; }
 
