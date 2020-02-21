@@ -23,7 +23,7 @@ namespace TestChrome
             driver.Navigate().GoToUrl("https://www.booking.com");
             HomePage homePage = new HomePage(); // чтобы могли обращаться к объектам из HomePage.cs
             PageFactory.InitElements(driver, homePage); // инициализация элементов Page Object из PageHome.cs (Deprecated/устаревшее?)
-            /*
+            
             // Выбор Английского США раздела
             homePage.LanguageSelection.Click();
             homePage.EnglishLanguageSelection.Click();
@@ -31,7 +31,7 @@ namespace TestChrome
             // Ввод в поиск New York
             homePage.TextSearchForm.Click();
             homePage.TextSearchForm.SendKeys("New York");
-            */
+            
             homePage.DateSearchForm.Click();
             Thread.Sleep(5000);
 
@@ -49,7 +49,6 @@ namespace TestChrome
 
             //driver.Dispose(); // Close the chromedriver.exe
             Assert.That(result, Does.Contain("def").IgnoreCase);
-             gjrf
         }
     }
 }
