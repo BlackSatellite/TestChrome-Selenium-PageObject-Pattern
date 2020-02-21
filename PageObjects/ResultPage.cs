@@ -12,6 +12,5 @@ namespace TestChrome.PageObjects
     {
         [FindsBy(How = How.CssSelector, Using = "data-tooltip-text='Hotel Pennsylvania, New York'")]
         public IWebElement StartDate { get; set; }
-        
     }
 }
